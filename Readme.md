@@ -25,7 +25,7 @@ face_recognition_system/
 - ---> my_faces/ # Folder for training images (auto-created)
 
 
-### Features
+## Features
 ***
 - Video-Based Training**: Collect face embeddings from live camera feed  
 - Real-Time Recognition**: Instantly test the trained model  
@@ -46,7 +46,7 @@ pip install opencv-python deepface numpy
 - Press 'q' to stop early
 - Model is automatically saved to face_model.pkl
 
-### Testing the Model
+## Testing the Model
 - Run the testing script: "python test_face_model.py"
 - Displays real-time recognition results
 - Press 'q' to exit
@@ -64,7 +64,7 @@ pip install opencv-python deepface numpy
 - Adjust similarity threshold: similarity_threshold in both scripts
 - Switch models: set model_name in DeepFace calls ("VGG-Face", "ArcFace", etc.)
 
- ##Troubleshooting
+ ## Troubleshooting
  ***
 - Camera Not Detected: Close other apps using the webcam
 - Poor Recognition: Add more training samples or increase duration
