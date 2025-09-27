@@ -7,10 +7,10 @@ The system uses **deep learning embeddings** to identify and verify faces with h
 
 ## Structure
 face-recognition-system:
-**train_face_model.py # Training script
-**test_face_model.py # Testing script
-**README.md # Project documentation
-**my_faces/ # Folder for training images (auto-created)
+- **train_face_model.py # Training script
+-  **test_face_model.py # Testing script
+-**README.md # Project documentation
+   - my_faces/ # Folder for training images (auto-created)
 
 
 ## Features
