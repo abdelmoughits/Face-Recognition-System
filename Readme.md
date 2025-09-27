@@ -9,8 +9,8 @@ The system uses **deep learning embeddings** to identify and verify faces with h
 2. [Features](#Features)
 3. [Installation Requirements](#Installation-Requirements)
 4. [Utilisation](#utilisation):
-   - [Mode entraînement](#mode-entraînement)
-   - [Mode test](#mode-test)
+   - [Training the Model](#Training-the-Model)
+   - [Testing the Model](#Testing-the-Model)
 6. [Technical Details](#Technical-Details)
 7. [Customization](Customization)
 8. [Troubleshooting](Troubleshooting)
@@ -18,55 +18,55 @@ The system uses **deep learning embeddings** to identify and verify faces with h
 
 ## Structure
 ***
-face-recognition-system:
-- **train_face_model.py # Training script
-- **test_face_model.py # Testing script
-- **README.md # Project documentation
-- **my_faces/ # Folder for training images (auto-created)
+face_recognition_system/
+- ---> train_face_model.py # Training script
+- ---> test_face_model.py # Testing script
+- ---> README.md # Project documentation
+- ---> my_faces/ # Folder for training images (auto-created)
 
 
-## Features
+### Features
 ***
-- **Video-Based Training**: Collect face embeddings from live camera feed  
-- **Real-Time Recognition**: Instantly test the trained model  
-- **Persistent Model Storage**: Save/load models for future use  
-- **Cross-Platform Compatibility**: Works on Windows/macOS/Linux  
+- Video-Based Training**: Collect face embeddings from live camera feed  
+- Real-Time Recognition**: Instantly test the trained model  
+- Persistent Model Storage**: Save/load models for future use  
+- Cross-Platform Compatibility**: Works on Windows/macOS/Linux  
 
 
 ## Installation Requirements
 ***
 pip install opencv-python deepface numpy
 
- ## Usage Instructions
+ ## Utilisation
  ***
  ### Training the Model
-- **Run the training script: "python train_face_model.py"
-- **Position your face in front of the camera
-- **Training runs for 30 seconds (customize with training_duration)
-- **Press 'q' to stop early
-- **Model is automatically saved to face_model.pkl
+- Run the training script: "python train_face_model.py"
+- Position your face in front of the camera
+- Training runs for 30 seconds (customize with training_duration)
+- Press 'q' to stop early
+- Model is automatically saved to face_model.pkl
 
 ### Testing the Model
-- **Run the testing script: "python test_face_model.py"
-- **Displays real-time recognition results
-- **Press 'q' to exit
+- Run the testing script: "python test_face_model.py"
+- Displays real-time recognition results
+- Press 'q' to exit
 
 ## Technical Details
 ***
-- **Model Architecture: DeepFace (Facenet model by default)
-- **Embedding Dimension: 512 vector per face
-- **Similarity Metric: Cosine similarity
-- **Performance: ~10–15 FPS, best at 640x480 resolution
+- Model Architecture: DeepFace (Facenet model by default)
+- Embedding Dimension: 512 vector per face
+- Similarity Metric: Cosine similarity
+- Performance: ~10–15 FPS, best at 640x480 resolution
 
  ## Customization
  ***
-- **Change training duration: training_duration in train_face_model.py
-- **Adjust similarity threshold: similarity_threshold in both scripts
-- **Switch models: set model_name in DeepFace calls ("VGG-Face", "ArcFace", etc.)
+- Change training duration: training_duration in train_face_model.py
+- Adjust similarity threshold: similarity_threshold in both scripts
+- Switch models: set model_name in DeepFace calls ("VGG-Face", "ArcFace", etc.)
 
  ##Troubleshooting
  ***
-- **Camera Not Detected: Close other apps using the webcam
-- **Poor Recognition: Add more training samples or increase duration
-- **False Positives: Raise similarity threshold
-- **False Negatives: Lower similarity threshold or add more embeddings
+- Camera Not Detected: Close other apps using the webcam
+- Poor Recognition: Add more training samples or increase duration
+- False Positives: Raise similarity threshold
+- False Negatives: Lower similarity threshold or add more embeddings
