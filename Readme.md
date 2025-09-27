@@ -1,10 +1,15 @@
-# Face Recognition System 
-
-## Overview
+# Face Recognition System
+***
 This project implements a **real-time face recognition system** that can be trained on-the-fly using your webcam and tested immediately.  
 The system uses **deep learning embeddings** to identify and verify faces with high accuracy.
 
 
+## Table of Contents
+1. [General Info](#general-info)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Collaboration](#collaboration)
+5. [FAQs](#faqs)
 ## Structure
 face-recognition-system:
 - **train_face_model.py # Training script
