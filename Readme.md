@@ -4,7 +4,6 @@
 This project implements a **real-time face recognition system** that can be trained on-the-fly using your webcam and tested immediately.  
 The system uses **deep learning embeddings** to identify and verify faces with high accuracy.
 
----
 
 ## Structure
 face-recognition-system/
@@ -13,7 +12,6 @@ face-recognition-system/
 ├── README.md # Project documentation
 └── my_faces/ # Folder for training images (auto-created)
 
----
 
 ## Features
 - **Video-Based Training**: Collect face embeddings from live camera feed  
@@ -21,10 +19,9 @@ face-recognition-system/
 - **Persistent Model Storage**: Save/load models for future use  
 - **Cross-Platform Compatibility**: Works on Windows/macOS/Linux  
 
----
 
 ## Installation Requirements
-```bash
+
 pip install opencv-python deepface numpy
 
  Usage Instructions
