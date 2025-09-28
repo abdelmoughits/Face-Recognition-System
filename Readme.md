@@ -46,7 +46,7 @@ pip install opencv-python deepface numpy
 - Press 'q' to stop early
 - Model is automatically saved to face_model.pkl
 
-## Testing the Model
+### Testing the Model
 - Run the testing script: "python test_face_model.py"
 - Displays real-time recognition results
 - Press 'q' to exit
